@@ -22,3 +22,12 @@ function swapVariable(a,b) {
   
 }
 swapVariable(28,92)
+
+
+// destructuring assignment 
+
+function swapByDestructure(a,b) {
+  [b,a]=[a,b]
+  console.log(a,b)
+}
+swapByDestructure(7,8)
