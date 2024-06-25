@@ -19,3 +19,18 @@
 
 // console.log(palindromeCheck(121)); // true
 // console.log(palindromeCheck(123)); // false
+
+
+function call(number) {
+  let numStr = number.toString()
+  let numArr = numStr.split('')
+
+
+  let result = numArr.every((item, index) => {
+    return item === numArr[numArr.length - 1 - index]
+  })
+
+  console.log(result)
+}
+call(121)
+call(12321)
