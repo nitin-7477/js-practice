@@ -48,7 +48,7 @@ let sum = 0;
     }
   
 }
-isArmStrong(1534)
+// isArmStrong(1534)
 function order(num) {
   let length = 0;
   while(num>0)
@@ -58,3 +58,23 @@ function order(num) {
     }
     return length
 }
+
+
+function checkArmStrong(number){
+ 
+let digits = Array.from(String(number),Number)
+const length = digits.length
+let sum = 0 ;
+sum = digits.reduce((acc,digit)=>acc + Math.pow(digit,length),0)
+ 
+if(sum==number)
+  {
+    console.log('Number is armstrong')
+  }
+  else{
+    console.log('Number is NOT armstrong')
+
+  }
+}
+
+checkArmStrong(1543)
