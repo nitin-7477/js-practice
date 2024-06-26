@@ -30,7 +30,23 @@ function call(number) {
     return item === numArr[numArr.length - 1 - index]
   })
 
-  console.log(result)
+  // console.log(result)
 }
 call(121)
 call(12321)
+
+function checkPalindromByLoop(number) {
+  let temp = number;
+  let sum = 0
+  while(temp)
+    {
+      reminder = temp%10;
+    
+      sum  = sum*10 + reminder
+      temp = Math.floor(temp/10)
+
+   
+    }
+    console.log(sum===number)
+}
+checkPalindromByLoop(121  )
